@@ -14,7 +14,6 @@ body {
   width: 60%;
   margin: auto;
   height: 100%;
-  border: 1px solid black;
 }
 
 /* Header */
@@ -142,21 +141,83 @@ main {
   width: 100%;
 }
 
+/* Banner */
 main #banner {
-  height: 100px;
   background-color: #33475b;
+}
+
+#banner p {
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#banner p span {
+  text-transform: uppercase;
+}
+
+#banner p a {
+  font-weight: bold;
   color: #fff;
 }
 
+/* SECTION Jumbo  */
 section.jumbo {
-  height: 700px;
   background-image: url('img/jumbo.png');
+  padding: 90px 0 210px;
 }
 
+#jumbo-content {
+  width: 38%;
+}
+
+.jumbo h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.jumbo h1 + p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.jumbo button {
+  border-radius: 4px;
+  background-color: #ff7a59;
+  border: 0px;
+  color: #fff;
+  padding: 30px 35px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.jumbo button + p {
+  font-size: 14px;
+  width: 50%;
+  line-height: 20px;
+}
+
+.jumbo p span {
+  text-transform: uppercase;
+}
+
+/* SECTION products */
 section.products {
   height: 1000px;
   background-color: #f5f8fa;
 }
+
+
+
+
 
 section.community {
   height: 800px;
