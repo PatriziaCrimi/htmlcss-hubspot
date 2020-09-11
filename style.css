@@ -211,9 +211,34 @@ section.jumbo {
 
 /* SECTION products */
 section.products {
-  height: 1000px;
   background-color: #f5f8fa;
 }
+
+section.products .container {
+  padding: 110px 0px 80px;
+}
+
+section .container::after{
+  content: '';
+  display: table;
+  clear:both;
+}
+
+.products-row {
+  width: 100%;
+}
+
+.products-box {
+  width: calc(100%/3 - 20px);
+  float:left;
+  background-color: white;
+  margin: 0px 25px 20px 0px;
+}
+
+.products-row .products-box:last-child {
+  margin-right: 0px;
+}
+
 
 
 
