@@ -308,12 +308,12 @@ section .products-box p:nth-child(3) {
 }
 
 section.products .features ul {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 section.products .features li {
   list-style-type: none;
-  margin-bottom: 18px;
+  line-height: 35px;
   font-size: 12px;
 }
 
@@ -351,7 +351,7 @@ section.products .features .new {
   border-radius: 10px 3px 3px 10px;
   position:absolute;
   top: 20px;
-  left: calc(91%);
+  left: calc(100% - 9%);
   width: 45px;
   height: 20px;
   line-height: 20px;
@@ -361,39 +361,77 @@ section.products .features .new {
 section.community {
   background-image: linear-gradient(45deg,#00a4bd,#00bda5);
   color: #fff;
-  padding: 50px;
+  padding: 130px 0 110px;
 }
 
-#community-top {
+section.community #community-top {
+  width: 80%;
+  margin: 0 auto 70px;
+  text-align: center;
 }
 
-#community-bottom {
-  width: 100%;
+section.community #community-top h2 {
+  letter-spacing: 3px;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 
-.community-bottom-row {
+section.community #community-top p {
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+
+section.community .bottom-row {
   width: 100%;
   border-bottom: 1px solid #fff;
 }
 
-.community-bottom-row:last-of-type {
+section.community .bottom-row:last-of-type {
   border-bottom: none;
 }
 
-.community-bottom-row::after{
+section.community .bottom-row::after{
   content: '';
   display: table;
   clear:both;
 }
 
-.community-bottom-box {
+#community-bottom .bottom-box {
   width: calc(100% / 4);
+  height: 100%);
   float:left;
   border-right: 1px solid #fff;
+  padding: 40px 0px;
+  text-align: center;
 }
 
-.community-bottom-box:last-of-type {
+#community-bottom .bottom-box:last-of-type {
   border-right: none;
+}
+
+#community-bottom .bottom-box h2 {
+  width: 100%;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin: 10px auto;
+}
+
+#community-bottom .bottom-box p {
+  font-size: 15px;
+}
+
+#community-bottom .bottom-box h2.plus::after {
+  content:'+';
+  font-weight: normal;
+  font-size: 20px;
+}
+
+#community-bottom img[alt="HubSpot_App_Marketplace"] {
+  width: 125px;
+}
+
+#community-bottom img[alt="customers_icon"] {
+  width: 41px;
 }
 
 /* SECTION Customers */
