@@ -436,26 +436,11 @@ section.community .bottom-row::after{
 
 /* SECTION Customers */
 section.customers {
-  height: 800px;
   background-color: #fff;
 }
 
-.customers .container {
-  border: 1px solid black;
-}
-
-#customers-top {
-}
-
-.customers-top-left {
-  width: 30%;
-  background-color: blue;
-  float: left;
-}
-
-.customers-logos {
-  width: 70%;
-  float: left;
+section.customers .container {
+  padding: 100px 0px;
 }
 
 #customers-top::after{
@@ -464,34 +449,84 @@ section.customers {
   clear:both;
 }
 
+#customers-top .text-wrapper {
+  width: 50%;
+  float: left;
+}
+
+.text-wrapper h2 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.text-wrapper p {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+  margin-right: 250px;
+}
+
+.text-wrapper p > span {
+  font-weight: bold;
+}
+
+#customers-top > .logos-wrapper {
+  width: 50%;
+  float: left;
+}
+
+.logos-wrapper .logos-row::after{
+  content='';
+  display: table;
+  clear: both;
+}
+
+.logos-wrapper .logos-box {
+  width: calc(100% / 4);
+  min-height: 60px;
+  float:left;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logos-wrapper .logos-box > img {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SECTION Customers - Bottom */
 #customers-bottom {
+  margin-top: 80px;
+  position: relative;
+}
+
+#customers-bottom::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .customers-bottom-left {
-  width: 50%;
+  width: 40%;
   float: left;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.customers-bottom-right {
-  width: 50%;
-  float: left;
+#customers-bottom h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-#customers-bottom::after{
-  content: '';
-  display: table;
-  clear:both;
-}
-
-.customers-logos-row > img {
-  float: left;
-  width: calc(100% / 4);
-}
-
-.customers-logos-row {
-  content: '';
-  display: table;
-  clear:both;
+#customers-bottom h2 ~ p {
+  letter-spacing: : 1.5px;
+  line-height: 30px;
 }
 
 #customers-bottom button {
@@ -499,15 +534,25 @@ section.customers {
   background-color: #ff7a59;
   border: 0px;
   color: #fff;
-  padding: 16px;
+  padding: 25px 14px;
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: bold;
-  width: 50%;
+  width: 40%;
+  margin: 30px 0;
 }
 
-.customers-bottom-right img {
-  width: 100%;
+#customers-bottom small {
+  display: block;
+}
+
+#customers-bottom small > span {
+  text-transform: uppercase;
+}
+
+#customers-bottom img {
+  width: 30%;
+  float: right;
 }
 
 /* Footer */
