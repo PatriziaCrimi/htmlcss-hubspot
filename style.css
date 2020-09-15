@@ -15,6 +15,12 @@ body {
   height: 100%;
 }
 
+
+header a, main a, footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header Top */
 .header-top {
   width: 100%;
@@ -110,7 +116,7 @@ body {
   padding: 25px 0px;
 }
 
-#header-nav-left > img {
+#header-nav-left img {
   width: 106px;
   height: 30px;
   background-position: center;
@@ -129,11 +135,6 @@ body {
   font-size: 14px;
   margin-left: 30px;
 }
-
-#header-nav-right li > a {
-  text-decoration: none;
-  color: #33475b;
-  }
 
 #header-nav-right a.dropdown_item::after {
   content: '▼';
@@ -167,6 +168,7 @@ main #banner {
 #banner p a {
   font-weight: bold;
   color: #fff;
+  text-decoration: underline;
 }
 
 /* SECTION Jumbo  */
@@ -569,11 +571,6 @@ footer .container {
 /* Footer Nav */
 footer ul li {
   list-style-type: none;
-}
-
-footer a {
-  text-decoration: none;
-  color: #cbd6e2;
 }
 
 footer a:hover {
