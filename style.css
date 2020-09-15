@@ -571,12 +571,12 @@ footer ul li {
   list-style-type: none;
 }
 
-footer ul li a {
+footer a {
   text-decoration: none;
   color: #cbd6e2;
 }
 
-footer ul li a:hover {
+footer a:hover {
   color: #7fd1de;
 }
 
@@ -655,28 +655,23 @@ footer ul li a:hover {
 
 /* Footer Bottom */
 #footer-bottom {
+  padding-top: 30px;
+  position: relative;
 }
 
 .footer-bottom-left small {
   display: block;
-}
-
-.footer-bottom-left {
-  float: left;
-}
-
-#footer-bottom::after {
-  content: '';
-  display: table;
-  clear: both;
+  margin-top: 15px;
 }
 
 .footer-bottom-right {
-  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  font-weight: bold;
 }
 
 .footer-bottom-right a {
-  color: #7fd1de;
-  text-decoration: none;
-  font-weight: bold;
+  margin: 0 20px 0 20px;
 }
