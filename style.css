@@ -15,10 +15,13 @@ body {
   height: 100%;
 }
 
-
 header a, main a, footer a {
   text-decoration: none;
   color: inherit;
+}
+
+header li, main li, footer li {
+  list-style-type: none;
 }
 
 /* Header Top */
@@ -87,6 +90,10 @@ header a, main a, footer a {
   margin: 0 10px 0 30px;
 }
 
+#login-button:hover {
+  background-color: rgba(255, 241, 238, 3);
+}
+
 #hubspot-button {
   border-radius: 4px;
   background-color: #ff7a59;
@@ -95,6 +102,10 @@ header a, main a, footer a {
   padding: 11px;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+#hubspot-button:hover {
+  background-color: rgba(255,122,89, 0.5);
 }
 
 /* Header Nav */
@@ -129,7 +140,6 @@ header a, main a, footer a {
 }
 
 #header-nav-right li {
-  list-style-type: none;
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
@@ -207,6 +217,10 @@ section.jumbo {
   width: 50%;
 }
 
+.jumbo button:hover {
+  background-color: rgba(255,122,89, 0.5);
+}
+
 .jumbo small {
   display: block;
   width: 50%;
@@ -234,23 +248,16 @@ section.products .container::after{
 
 section .products-row {
   width: 100%;
-  height: 50%;
 }
 
 section.products .products-box {
   width: calc(100%/3 - 20px);
-  height: calc(100% - 10px);
   float:left;
-  background-color: white;
   margin: 0px 30px 20px 0px;
 }
 
 section .products-row .products-box:last-child {
   margin-right: 0px;
-}
-
-section .products-row > .products-box.description {
-  background-color: #f5f8fa;
 }
 
 section.products .description h2 {
@@ -266,9 +273,15 @@ section.products .description p {
   font-size: 14px;
 }
 
-section.products .features {
-  padding: 50px 40px;
+section.products .products-box.features {
+  padding: 50px 40px 20px;
   position: relative;
+  background-color: white;
+  min-height: 530px;
+}
+
+section.products .products-box.features:hover {
+  box-shadow: 0px 10px 25px 2px #999999;
 }
 
 section.products .features .title {
@@ -314,7 +327,6 @@ section.products .features ul {
 }
 
 section.products .features li {
-  list-style-type: none;
   line-height: 35px;
   font-size: 12px;
 }
@@ -324,9 +336,9 @@ section.products .features li::before {
   color: white;
   background-color: #ff7a59;
   border-radius: 50%;
-  padding: 3px 3px;
-  margin-right: 14px;
-  font-size: 14px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  font-size: 12px;
 }
 
 section.products .features button {
@@ -341,6 +353,10 @@ section.products .features button {
   width: 100%;
 }
 
+section.products .features button:hover {
+  background-color: rgba(255,122,89, 0.5);
+}
+
 section.products .features .new {
   background-color: #00bda5;
   color: #fff;
@@ -348,7 +364,7 @@ section.products .features .new {
   font-weight: bold;
   font-size: 10px;
   letter-spacing: 1px;
-  padding: 0 5px 0;
+  padding: 1px 5px 0;
   text-align: right;
   border-radius: 10px 3px 3px 10px;
   position:absolute;
@@ -500,7 +516,6 @@ section.customers .container {
   transform: translate(-50%, -50%);
 }
 
-/* SECTION Customers - Bottom */
 #customers-bottom {
   margin-top: 80px;
   position: relative;
@@ -544,6 +559,10 @@ section.customers .container {
   margin: 30px 0;
 }
 
+#customers-bottom button:hover {
+  background-color: rgba(255,122,89, 0.5);
+}
+
 #customers-bottom small {
   display: block;
 }
@@ -569,10 +588,6 @@ footer .container {
 }
 
 /* Footer Nav */
-footer ul li {
-  list-style-type: none;
-}
-
 footer a:hover {
   color: #7fd1de;
 }
@@ -622,6 +637,14 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
+.footer-nav button:hover {
+  background-color: rgba(234, 240, 246, 3);
+}
+
+.footer-nav button a:hover {
+  color: inherit;
+}
+
 .social-links ul::after {
   content: '';
   display: table;
@@ -638,7 +661,6 @@ footer a:hover {
   display: none;
 }
 
-/* Languages */
 #footer-top .languages {
   text-align: center;
   margin-top: 50px;
@@ -650,7 +672,6 @@ footer a:hover {
   margin-right: 30px;
 }
 
-/* Footer Bottom */
 #footer-bottom {
   padding-top: 30px;
   position: relative;
