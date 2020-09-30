@@ -20,7 +20,7 @@ header a, main a, footer a {
   color: inherit;
 }
 
-header li, main li, footer li {
+header ul, main ul, footer ul {
   list-style-type: none;
 }
 
@@ -204,7 +204,8 @@ section.jumbo {
   margin-bottom: 24px;
 }
 
-.jumbo button {
+.jumbo a {
+  display: block;
   border-radius: 4px;
   background-color: #ff7a59;
   border: 0px;
@@ -214,10 +215,10 @@ section.jumbo {
   letter-spacing: 1px;
   font-weight: bold;
   margin-bottom: 30px;
-  width: 50%;
+  width: 55%;
 }
 
-.jumbo button:hover {
+.jumbo a:hover {
   background-color: rgba(255,122,89, 0.5);
 }
 
